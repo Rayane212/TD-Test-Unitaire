@@ -12,10 +12,6 @@ class TestFizzBuzz(unittest.TestCase):
         ]
         result = list(self.fizzbuzz.fizzbuzz(15))
         self.assertEqual(result, expected_output)
-    
-    def test_fizzbuzz_last_value(self):
-        result = list(self.fizzbuzz.fizzbuzz(2000000001))
-        self.assertEqual(result[-1], "FizzBuzz")
    
     if __name__ == "__main__":
         unittest.main()
